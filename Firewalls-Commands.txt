@@ -1,41 +1,19 @@
-Steps Performed
+Commands Used
 
-Installed UFW
-
+# Install UFW
 sudo apt install ufw
 
-UFW installed successfully for managing firewall rules easily.
-
-Checked Firewall Status
-
+# Check Firewall Status
 sudo ufw status numbered
 
-Initially firewall was inactive.
-
-Enabled Firewall
-
+# Enable Firewall
 sudo ufw enable
 
-Firewall activated and set to start automatically on system boot.
-
-Blocked a Specific Port (Example: Telnet - Port 23)
-
+# Block Specific Port (Example: Telnet Port 23)
 sudo ufw deny 23
 
-This rule blocks all inbound connections on port 23.
-
-Tested Block Rule
-
-Tried to connect to the blocked port locally/remotely. Connection failed as expected.
-
-Allowed SSH (Port 22)
-
+# Allow SSH (Port 22)
 sudo ufw allow 22
 
-This rule allows secure remote login to the system.
-
-Removed Test Rule
-
+# Remove Test Block Rule
 sudo ufw delete deny 23
-
-Restored firewall to its original state after testing.
